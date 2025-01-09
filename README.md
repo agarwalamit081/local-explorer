@@ -73,4 +73,4 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 
 ## **Contact**
 
-For questions or feedback, please contact [Your Name](mailto:agarwalamit081@gmail.com).
+For questions or feedback, please contact [Amit Agarwal](mailto:agarwalamit081@gmail.com).
