@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Explorer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <style>
+        #activities-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .activity {
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        #map {
+            width: 100%;
+            height: 300px;
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Local Explorer</h1>
+    <button id="get-suggestion">Get Activity Suggestion</button>
+    
+    <div id="weather-details">
+        <p>City: <span id="city"></span></p>
+        <p>Country: <span id="country"></span></p>
+        <p>Temperature: <span id="temperature"></span>°C</p>
+        <p>Wind Speed: <span id="wind-speed"></span> m/s</p>
+        <p>Rain: <span id="rain"></span></p>
+        <p>Snow: <span id="snow"></span></p>
+        <p>Current Time: <span id="current-time"></span></p>
+    </div>
+
+    <div id="activities-grid">
+        <div class="activity" id="activity-1"></div>
+        <div class="activity" id="activity-2"></div>
+        <div class="activity" id="activity-3"></div>
+        <div class="activity" id="activity-4"></div>
+    </div>
+
+    <iframe id="map" width="600" height="450" style="border:0;" loading="lazy"></iframe>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
